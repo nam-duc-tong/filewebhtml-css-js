@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+</head>
+<body>
+	<h3>JSFunction</h3>
+	<p id = "s"></p>
+	<p id = "demo"></p>
+	<script type="text/javascript">
+	
+	/*	function sumOfArray(start, end)
+		{
+			var s = 0;
+			for(var i = start ; i <= end ; i++)
+			{
+				s += i;
+			}
+			return s;
+		}	
+		document.getElementById("s").innerHTML = "Tong tu 1 den 10 = " + sumOfArray(1, 10); */
+		// function sayHello(message, name)
+		// {
+		// 	var msg = message + " " + name + "!";
+		// 	return  msg;
+		// }
+		// var ms = "Good morning";
+		// var ms2 = " Good night";
+		// var person = " Tong Van A";
+		// var person1 = "Tran Thi C";
+
+		// document.getElementById("s").innerHTML = sayHello(ms,person);
+		// document.getElementById("ss").innerHTML = sayHello(ms2,person1);
+		var person = {
+			firstName: "Nam",
+			lastName: "Tong",
+			age: 20,
+			gender: "Male",
+			address: "Ninh Binh",
+			smile: function(){
+				return "hihihihi...";
+			},
+			goToSchool: function(){
+				return "By bus";
+			},
+			fullname: function(){
+				return this.firstName + " " + this.lastName;
+			}
+		}
+		document.getElementById("demo").innerHTML = person.fullname();
+	</script>
+</body>
+</html>

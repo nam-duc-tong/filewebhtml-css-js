@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="filejs/caculator.js"></script>
+	<title>Document</title>
+	<style>
+		body{
+			border: 1px solid #000;
+			
+			width: 500px;
+			height: 600px;
+			text-align: center;
+			padding: 5px 10px;
+		}
+		form{
+			background-color: gray;
+		}
+	</style>
+</head>
+<body>
+	<form>
+	<h1>Sum (a,b)</h1>
+	<p>a: <input type="text" id="a"/></p>
+	<p>b: <input type="text" id="b"/></p>
+	<input type="button" value="SUM" onclick="console.log(SUM(Number(a.value),Number (b.value)))"/>
+
+</form>
+</body>
+</html>
